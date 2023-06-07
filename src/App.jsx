@@ -1,15 +1,15 @@
-// eslint-disable-next-line no-unused-vars
-import React from 'react'
-import Home from './components/Home'
 import './app.scss'
+import NavBar from './components/navbar/NavBar'
+import PokemonList from './components/pokemonlist/pokemonList'
 
 const App = () => {
   return (
-    <div className="app">
-      <div className="center">
-        <Home/>
+      <div className="app">
+        <div className="flex flex-col center">
+          <NavBar />
+          <PokemonList/>
+        </div>
       </div>
-    </div>
   )
 }
 

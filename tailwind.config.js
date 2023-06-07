@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        signature: ['Pacifico']
+      },
       colors: {
         'pastelPurple': "#f4e6ff",
       }

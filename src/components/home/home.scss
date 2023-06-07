@@ -1,0 +1,161 @@
+.app-container {
+    @apply
+    flex
+    flex-col
+    mt-20
+    bg-[#CEB5D9]
+    p-5
+    rounded-3xl
+    w-[25rem]
+    h-auto
+    max-h-screen
+    shadow-md
+    shadow-gray-900
+    mx-auto
+    text-center;
+
+    @media (max-width:768px) {
+        @apply
+        w-[20rem]
+        h-auto
+    }
+}
+
+.content {
+    @apply
+    flex
+    flex-col
+    font-extrabold
+    text-white
+    text-4xl;
+
+    .title-container {
+        @apply
+        pt-2
+        pb-4
+        rounded-2xl
+        bg-[#9679bb]
+    }
+
+    .image-container {
+        @apply
+        flex
+        items-center
+        justify-center
+        h-auto
+        m-5;
+
+        img {
+            @apply
+            z-50
+            max-w-full
+            h-auto
+        }
+        .grass {
+            @apply
+            flex
+            mt-24
+            h-28
+            w-60
+            absolute
+            shadow-none
+        }
+    }
+
+    .info-container{
+        @apply
+        pb-5
+        rounded-2xl
+        bg-[#948ac4];
+
+        .pokemon-container {
+            @apply
+            flex
+            justify-center;
+
+            button {
+                @apply
+                my-2
+                ml-5
+                bg-white
+                text-black
+                text-sm
+            }
+        }
+    }
+
+    .type-container{
+        @apply
+        flex
+        justify-center
+        text-xl
+        my-2;
+
+        p {
+            @apply
+            w-fit
+            px-3
+            mx-1
+            border-2
+            rounded-3xl
+            border-white;
+        }
+    }
+
+    .detail-container {
+        @apply
+        text-sm
+        open:bg-white
+        dark:open:bg-slate-900
+        open:ring-1
+        open:ring-black/5
+        dark:open:ring-white/10
+        open:shadow-lg
+        p-6
+        rounded-lg
+    }
+
+    h3{
+        @apply
+        font-semibold
+        text-3xl;
+    }
+
+    p{
+        @apply
+        text-base
+        font-medium
+    }
+
+    button.random {
+        @apply
+        font-semibold
+        text-xl
+        bg-cyan-400
+        rounded-2xl
+        py-1
+        px-5
+        w-fit
+        flex
+        mx-auto
+        drop-shadow-lg
+        border-2
+        border-cyan-300
+        shadow-blue-950
+        hover:border-cyan-500
+        hover:drop-shadow-xl
+        hover:shadow-black
+        hover:bg-sky-600
+        transform
+        hover:translate-y-1
+        transition
+        duration-200;
+
+        @media (max-width:768px) {
+            @apply
+            text-base
+            py-2
+            px-5;
+        }
+    }
+}

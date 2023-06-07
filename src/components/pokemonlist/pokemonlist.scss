@@ -1,0 +1,134 @@
+.app {
+    @apply
+    mx-20
+}
+
+.container {
+    @apply
+    grid grid-cols-5 grid-flow-row gap-5
+    h-auto
+    mx-auto
+    rounded-xl
+    bg-cyan-100
+    my-10
+    border-black
+    border-8
+    border-double;
+
+  @media (min-width: 640px) {
+    /* Adjust for screens with minimum width of 640px */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (min-width: 768px) {
+    /* Adjust for screens with minimum width of 768px */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (min-width: 1024px) {
+    /* Adjust for screens with minimum width of 1024px */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+.search-bar {
+    @apply
+    mt-10
+    mx-20;
+    input {
+        @apply
+        uppercase
+        bg-black
+        opacity-30
+        text-white
+        pl-5
+        h-16
+        w-full
+        rounded-3xl
+        placeholder:lowercase
+        placeholder:text-4xl
+        placeholder:focus:outline-none
+        text-4xl
+    }
+}
+
+.filter-buttons {
+  @apply
+  flex
+  flex-wrap
+  mx-10
+  my-5
+  bg-white
+  rounded-3xl
+  justify-center;
+
+  button {
+    @apply
+    m-2
+    w-24
+    rounded-3xl
+    border-2
+    border-black
+  }
+}
+
+.pokemon-info {
+  @apply text-center flex flex-col max-w-xs justify-center h-fit w-fit border-2 m-4 border-black bg-white rounded-2xl overflow-hidden;
+
+  img {
+    @apply m-auto h-auto w-auto overflow-visible;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}
+
+  img:hover {
+    @apply scale-110 overflow-visible;
+    transform-origin: center center;
+    z-index: 1;
+  }
+
+  h1 {
+    @apply font-semibold text-lg border-t-2 border-black bg-black text-white;
+  }
+
+  .type-container {
+    p {
+      @apply border-t-2 border-black;
+    }
+  }
+}
+
+
+.pagination {
+    @apply
+    flex
+    flex-wrap
+    rounded-3xl
+    bg-white
+    opacity-80
+    p-2
+    mx-20
+    mb-5;
+
+    button {
+        @apply
+        h-12
+        w-12
+        m-2
+        bg-cyan-50
+        border-2
+        border-black
+        text-center
+        rounded-full
+        justify-between;
+
+        .active {
+          @apply
+          scale-125
+        }
+    }
+}

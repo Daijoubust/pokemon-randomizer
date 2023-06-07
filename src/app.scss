@@ -1,11 +1,4 @@
-.app {
-    @apply
-    flex
-    justify-center
-    h-screen
-}
-
 .center {
   @apply
-  text-center
+  max-w-full
 }
