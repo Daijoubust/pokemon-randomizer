@@ -1,6 +1,6 @@
 import './app.scss'
 import NavBar from './components/navbar/NavBar'
-import PokemonList from './components/pokemonlist/PokemonLists'
+import PokemonList from './components/pokemonlist/PokemonList'
 
 const App = () => {
   return (

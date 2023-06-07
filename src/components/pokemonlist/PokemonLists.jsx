@@ -195,4 +195,4 @@ const fetchPokemonImages = async (pokemonList) => {
   );
 };
 
-export default PokemonList;
+// export default PokemonList;
